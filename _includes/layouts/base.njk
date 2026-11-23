@@ -132,8 +132,8 @@
 </script>
 {% endif %}
 <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="/feed/">
-<link rel="preload" href="/css/style.css?v=14" as="style">
-<link rel="stylesheet" href="/css/style.css?v=14">
+<link rel="preload" href="/css/style.css?v=15" as="style">
+<link rel="stylesheet" href="/css/style.css?v=15">
 </head>
 <body>
 <a class="skip-link" href="#main">مواد ڏانهن وڃو</a>
@@ -145,13 +145,21 @@
 {{ content | safe }}
 </main>
 <footer class="site-footer">
-    <p>{{ site.title }} — <a href="/feed/">RSS feed</a> · <a href="/search/">ڳولا</a> · <a href="/privacy/">رازداري</a></p>
+    <p>{{ site.title }} — <a href="/feed/">RSS feed</a> · <a href="/search/">ڳولا</a> · <a href="/privacy/">رازداري</a> · <a href="#" id="cookie-settings">ڪوڪيز جون سيٽنگون</a></p>
   <p>Connect — <a href="https://www.instagram.com/jonamccallum">Instagram</a> · <a href="https://www.threads.com/@jonamccallum">Threads</a> · <a href="https://www.youtube.com/@Jonathanmccallum1">YouTube</a> · <a href="https://jonamccallum.substack.com">Substack</a> · <a href="/feed/">RSS</a></p>
   <p>سلام ڪريو — <a href="#" data-contact-email data-contact-email-text>مون کي اي ميل ڪريو</a></p>
   <p><span dir="ltr">Built with Eleventy, hosted on Cloudflare Pages.</span></p>
 </footer>
 <script src="/js/main.js?v=8" defer></script>
 <script src="/js/contact.js?v=1" defer></script>
+<script src="/js/consent.js?v=1" defer></script>
 <script src="/js/comments.js?v=1" defer></script>
+<div id="cookie-banner" class="cookie-banner" role="dialog" aria-label="ڪوڪيز" hidden>
+  <p><strong>ڪوڪيز.</strong> هي سائيٽ سادي رکي ٿي: اها رڳو توهان جي پنهنجي ڊوائيس تي توهان جي هلڪي يا اونداهي ٿيم کي ياد رکي ٿي. هتي ڪجهه به توهان کي ٽريڪ نٿو ڪري. <a href="/privacy/">رازداري وارو صفحو پڙهو</a>.</p>
+  <p class="cookie-banner__buttons">
+    <button id="cookie-accept" type="button">قبول ڪريو</button>
+    <button id="cookie-reject" type="button">رد ڪريو</button>
+  </p>
+</div>
 </body>
 </html>
